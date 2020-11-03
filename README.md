@@ -19,7 +19,7 @@ Photo roulette is a party game *perfect for discord* where players put a pool of
 - Overview
 - Integrated Technologies
 
-## Getting Started:
+## Getting Started  
 ### How do I get the bot onto my server?
 To get started, you have to have:
 - A discord account
@@ -41,7 +41,7 @@ This will let the bot know which text-channel to go to. If all goes well, it sho
 
 Then, you follow the on-screen instructions to start playing!
 
-## User Documentation:
+## User Documentation
 ### User Commands:  
 **!setup** : command used to tell the bot which channel to run on.  
 __*Common uses*__  
