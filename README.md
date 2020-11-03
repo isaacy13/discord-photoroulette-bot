@@ -8,16 +8,16 @@ Photo roulette is a party game *perfect for discord* where players put a pool of
 
 # Contents: 
 ## 1. Getting Started
-### - How do I get the bot onto my server?
-### - What if I want to run the bot locally?
-### - How do I get the bot going?
+- How do I get the bot onto my server?
+- What if I want to run the bot locally?
+- How do I get the bot going?
 ## 2. User Documentation
-### - User Commands
-### - What's the point of this bot?
-### - Why'd you make this?
+- User Commands
+- What's the point of this bot?
+- Why'd you make this?
 ## 3. Technical Documentation
-### - Overview
-### - Integrated Technologies
+- Overview
+- Integrated Technologies
 
 ## Getting Started:
 ### How do I get the bot onto my server?
