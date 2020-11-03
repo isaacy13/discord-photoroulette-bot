@@ -4,22 +4,22 @@ A FOSS discord bot that allows you and your friends to play photo roulette!
 ![Photo Roulette Logo](https://i.imgur.com/iyf83jR.png)
 
 # What is Photo Roulette?
-Photo roulette is a party game *perfect for discord* where players put a pool of pictures into a "**hat**". The computer then **randomly** chooses a picture out of the "**hat**" and everyone guesses whose picture it is!
+Photo roulette is a unique party game *perfect for discord* where players put a pool of pictures into a "**hat**". The computer then **randomly** chooses a picture out of the "**hat**" and everyone guesses whose picture it is!
 
 # Contents: 
-## Getting Started
+### Getting Started
 - How do I get the bot onto my server?
 - What if I want to run the bot locally?
 - How do I get the bot going?
-## User Documentation
+### User Documentation
 - User Commands
 - What's the point of this bot?
 - Why'd you make this?
-## Technical Documentation
+### Technical Documentation
 - Overview
 - Integrated Technologies
-
-## Getting Started  
+  
+# Getting Started  
 ### How do I get the bot onto my server?
 To get started, you have to have:
 - A discord account
@@ -41,7 +41,7 @@ This will let the bot know which text-channel to go to. If all goes well, it sho
 
 Then, you follow the on-screen instructions to start playing!
 
-## User Documentation
+# User Documentation
 ### User Commands:  
 **!setup** : command used to tell the bot which channel to run on.  
 __*Common uses*__  
@@ -100,8 +100,42 @@ As of October 2020, I haven't seen any picture roulette bots for Discord. Having
 ### Why did you make this?  
 As part of the Aggie Coding Club, I was invited to participate in the *Capsher Coding Challenge*! Creating a discord bot seemed interesting and so I decided to dip my toes into it. Although I was alotted about a month's worth of time, I was only able to work on it for about 12 hours due to studying and exams. However, this was a really cool experience because I got to see the "fruits of my labor" at the end of it.  
 
-## Technical Documentation:  
-### Overview:  
+# Technical Documentation:  
+## Overview:  
+### *Global variables*  
+Although I realize global variables are frowned upon, I decided to go with global variables to allow all functions to be able to call upon these important moving parts of the program.  
+Examples of this are the:  
+- *list* of images
+- *list* of authors
+- *list* of people that have voted to skip
+- *string* containing the current guesser
+- *string* containing the correct guess
+- *string* containing the bot's token
+- *integer* containing the channel id  
+
+### *On_ready listener*  
+Called upon when the bot joins a server. Using this powerful asynchronous client event listener allowed me to:  
+Avoid errors upon compilation due to unknown channel id
+Give the user a chance to tell the bot what the proper channel id was
+
+### *On_message listener*  
+Called upon when the bot receives a message (be it a DM or channel-message). By building around this powerful asynchronous client event listener, I was able to:  
+Listen for user's commands
+Bounds check their commands
+Apply logic to the user's commands
+Act on their commands
+Examples of this include:  
+- Ensuring that the bot has enough users **AND** pictures to start the game
+- Apply logic to enforce proper voteskipping
+- Clear the message pool
+- *Much more*
 
 ### Integrated Technologies:  
-
+## *Discord* Library  
+The discord.py library allowed me to communicate with the discord client and did the majority of the heavy lifting discord-wise. Using its powerful built-in functions was necessary to create this bot.  
+## Discord Developer Portal  
+The portal allowed me to create my bot and register it with Discord's servers. It also provided me essential information like my bot's unique token, which allowed my bot to function.  
+## *Random* Library  
+Allowed the creation of pseudo-random numbers with the simple call of a few functions.  
+## Heroku / Git  
+Heroku / Git allowed me to push my files onto the Heroku servers and deploy them to be run for free!  
