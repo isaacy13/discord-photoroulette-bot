@@ -53,7 +53,7 @@ To remind users of commands
 __*Common uses*__  
 Used after three people are present in the text-channel **AND** at least one picture has been submitted.  
 
-__*Possible returns**__  
+__*Possible returns*__  
 *"There aren't enough pictures! Send them to the discord bot via DM."*  
 In this scenario, the bot hasn't received any pictures from the players.  
 Solution: Players DM the bot pictures  
@@ -67,7 +67,7 @@ Solution: Make sure you have 3 people **active** in the text-channel. If there a
 __*Common uses*__  
 To skip someone that is AFK (away from keyboard)
 
-__*Possible returns**__  
+__*Possible returns*__  
 *"You can't voteskip twice, {name}"*  
 Solution: You have already voted to skip the current person. You can only vote once.  
 
@@ -81,7 +81,7 @@ Solution: Yay! The person in question has been skipped and the bot will let you 
 __*Common uses*__  
 Clear an image pool that the players are tired of  
 
-__*Possible returns**__  
+__*Possible returns*__  
 *"Picture pool cleared!"*  
 Solution: Now, the players need to DM the bot more pictures (since the pool is now clear).
 
@@ -89,7 +89,7 @@ Solution: Now, the players need to DM the bot more pictures (since the pool is n
 __*Common uses*__  
 To end the picture roulette game  
 
-__*Possible returns**__  
+__*Possible returns*__  
 *"Until next time..."*  
 Solution: Come play again next time!
 
@@ -117,25 +117,29 @@ Examples of this are the:
 Called upon when the bot joins a server. Using this powerful asynchronous client event listener allowed me to:  
 Avoid errors upon compilation due to unknown channel id
 Give the user a chance to tell the bot what the proper channel id was
+Update the corresponding *global variable* that holds the channel id  
 
 ### *On_message listener*  
 Called upon when the bot receives a message (be it a DM or channel-message). By building around this powerful asynchronous client event listener, I was able to:  
 Listen for user's commands
-Bounds check their commands
+Bounds check their commands (via python logic)
 Apply logic to the user's commands
-Act on their commands
+Act on their commands (therefore updating the *global variables*)
 Examples of this include:  
 - Ensuring that the bot has enough users **AND** pictures to start the game
 - Apply logic to enforce proper voteskipping
 - Clear the message pool
 - *Much more*
 
+### Conclusion
+In conclusion, there are *three* primary moving parts in my bot, listed above. The event listeners wait for certain events to occur or commands to be typed in and then applies pythonian logic to change the *global variables*. By updating these *global variables*, things like picking an image out of a **hat**, randomizing guessers, and implementing voteskip features are possible.
+
 ### Integrated Technologies:  
-## *Discord* Library  
+## Discord Library  
 The discord.py library allowed me to communicate with the discord client and did the majority of the heavy lifting discord-wise. Using its powerful built-in functions was necessary to create this bot.  
 ## Discord Developer Portal  
 The portal allowed me to create my bot and register it with Discord's servers. It also provided me essential information like my bot's unique token, which allowed my bot to function.  
-## *Random* Library  
+## Random Library  
 Allowed the creation of pseudo-random numbers with the simple call of a few functions.  
 ## Heroku / Git  
 Heroku / Git allowed me to push my files onto the Heroku servers and deploy them to be run for free!  
