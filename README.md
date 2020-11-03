@@ -3,21 +3,21 @@ A FOSS discord bot that allows you and your friends to play photo roulette!
 
 ![Photo Roulette Logo](https://i.imgur.com/iyf83jR.png)
 
-## What is Photo Roulette?
+# What is Photo Roulette?
 Photo roulette is a party game *perfect for discord* where players put a pool of pictures into a "**hat**". The computer then **randomly** chooses a picture out of the "**hat**" and everyone guesses whose picture it is!
 
-## Contents: 
-1. Getting Started
-- How do I get the bot onto my server?
-- What if I want to run the bot locally?
-- How do I get the bot going?
-2. User Documentation
-- User Commands
-- What's the point of this bot?
-- Why'd you make this?
-3. Technical Documentation
-- Overview
-- Integrated Technologies
+# Contents: 
+## 1. Getting Started
+### - How do I get the bot onto my server?
+### - What if I want to run the bot locally?
+### - How do I get the bot going?
+## 2. User Documentation
+### - User Commands
+### - What's the point of this bot?
+### - Why'd you make this?
+## 3. Technical Documentation
+### - Overview
+### - Integrated Technologies
 
 ## Getting Started:
 ### How do I get the bot onto my server?
