@@ -23,14 +23,14 @@ Photo roulette is a party game *perfect for discord* where players put a pool of
 ### How do I get the bot onto my server?
 To get started, you have to have:
 - A discord account
-- A discord server where you have the permissions to "Manage" the server
+- A discord server where you have the permissions to "Manage" the server  
 
-Then, you click the following link:
-https://discord.com/oauth2/authorize?client_id=760273969688739882&scope=bot&permissions=52224
+Then, you click the following link:  
+https://discord.com/oauth2/authorize?client_id=760273969688739882&scope=bot&permissions=52224  
 
-**Login to discord** (if you haven't already)
-**Select the server you want to add the bot to** from the "add to server" dropdown menu
-**Select continue** and the bot should load onto your server!
+**Login to discord** (if you haven't already)  
+**Select the server you want to add the bot to** from the "add to server" dropdown menu  
+**Select continue** and the bot should load onto your server!  
 
 ### But I want to run the bot locally
 No problem! Just download the bot and follow the instructions under "*How do I get the bot onto my server?*". After that, **run the bot.py file** in a program of your choice!
@@ -94,11 +94,14 @@ __*Possible returns**__
 Solution: Come play again next time!
 
 
-### What's the point of this bot?
-As of October 2020, I haven't seen any picture roulette bots for Discord. Having played it on a phone at school with a group of friends, I knew how entertaining it could be. Therefore, I sought to follow an engineer's way: *"If it doesn't exist, **create** it!"*. As for how it could potentially carry over from a phone game to a discord-bot minigame, I know Discord is an environment in which people spend hours on hours of time conversing with each other. The bot serves as a good way to involve everybody in the environment and hopefully get a few laughs out of everyone. The point of this bot is to hopefully cure a little of their boredom and maybe even inspire others to create a bot of their own!
+### What's the point of this bot?  
+As of October 2020, I haven't seen any picture roulette bots for Discord. Having played it on a phone at school with a group of friends, I knew how entertaining it could be. Therefore, I sought to follow an engineer's way: *"If it doesn't exist, **create** it!"*. As for how it could potentially carry over from a phone game to a discord-bot minigame, I know Discord is an environment in which people spend hours on hours of time conversing with each other. The bot serves as a good way to involve everybody in the environment and hopefully get a few laughs out of everyone. The point of this bot is to hopefully cure a little of their boredom and maybe even inspire others to create a bot of their own!  
 
-### Why did you make this?
-As part of the Aggie Coding Club, I was invited to participate in the *Capsher Coding Challenge*! Creating a discord bot seemed interesting and so I decided to dip my toes into it. Although I was alotted about a month's worth of time, I was only able to work on it for about 12 hours due to studying and exams. However, this was a really cool experience because I got to see the "fruits of my labor" at the end of it.
-## Technical Documentation:
-### Overview:
-### Integrated Technologies:
+### Why did you make this?  
+As part of the Aggie Coding Club, I was invited to participate in the *Capsher Coding Challenge*! Creating a discord bot seemed interesting and so I decided to dip my toes into it. Although I was alotted about a month's worth of time, I was only able to work on it for about 12 hours due to studying and exams. However, this was a really cool experience because I got to see the "fruits of my labor" at the end of it.  
+
+## Technical Documentation:  
+### Overview:  
+
+### Integrated Technologies:  
+
