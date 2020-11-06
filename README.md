@@ -115,16 +115,16 @@ Examples of this are the:
 
 ### *On_ready listener*  
 Called upon when the bot joins a server. Using this powerful asynchronous client event listener allowed me to:  
-Avoid errors upon compilation due to unknown channel id
-Give the user a chance to tell the bot what the proper channel id was
+Avoid errors upon compilation due to unknown channel id  
+Give the user a chance to tell the bot what the proper channel id was  
 Update the corresponding *global variable* that holds the channel id  
 
 ### *On_message listener*  
 Called upon when the bot receives a message (be it a DM or channel-message). By building around this powerful asynchronous client event listener, I was able to:  
-Listen for user's commands
-Bounds check their commands (via python logic)
-Apply logic to the user's commands
-Act on their commands (therefore updating the *global variables*)
+Listen for user's commands  
+Bounds check their commands (via python logic)  
+Apply logic to the user's commands  
+Act on their commands (therefore updating the *global variables*)  
 Examples of this include:  
 - Ensuring that the bot has enough users **AND** pictures to start the game
 - Apply logic to enforce proper voteskipping
@@ -132,7 +132,7 @@ Examples of this include:
 - *Much more*
 
 ### Conclusion
-In conclusion, there are *three* primary moving parts in my bot, listed above. The event listeners wait for certain events to occur or commands to be typed in and then applies pythonian logic to change the *global variables*. By updating these *global variables*, things like picking an image out of a **hat**, randomizing guessers, and implementing voteskip features are possible.
+In conclusion, there are *three* primary moving parts in my bot, listed above. The event listeners wait for certain events to occur or commands to be typed in and then applies pythonian logic to change the *global variables*. By updating these *global variables*, things like picking an image out of a **hat**, randomizing guessers, and implementing voteskip features are possible.  
 
 ### Integrated Technologies:  
 ## Discord Library  
