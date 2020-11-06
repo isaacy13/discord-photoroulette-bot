@@ -115,16 +115,16 @@ Examples of this are the:
 
 ### *On_ready listener*  
 Called upon when the bot joins a server. Using this powerful asynchronous client event listener allowed me to:  
-Avoid errors upon compilation due to unknown channel id  
-Give the user a chance to tell the bot what the proper channel id was  
-Update the corresponding *global variable* that holds the channel id  
+- Avoid errors upon compilation due to unknown channel id  
+- Give the user a chance to tell the bot what the proper channel id was  
+- Update the corresponding *global variable* that holds the channel id  
 
 ### *On_message listener*  
 Called upon when the bot receives a message (be it a DM or channel-message). By building around this powerful asynchronous client event listener, I was able to:  
-Listen for user's commands  
-Bounds check their commands (via python logic)  
-Apply logic to the user's commands  
-Act on their commands (therefore updating the *global variables*)  
+- Listen for user's commands  
+- Bounds check their commands (via python logic)  
+- Apply logic to the user's commands  
+- Act on their commands (therefore updating the *global variables*)  
 Examples of this include:  
 - Ensuring that the bot has enough users **AND** pictures to start the game
 - Apply logic to enforce proper voteskipping
